@@ -1,2 +1,2 @@
-vercel link: https://polaris-kohl-seven.vercel.app/
-render link: https://polaris-1.onrender.com
+vercel link: https://polaris-2-orcin.vercel.app/
+render link: https://polaris-2.onrender.com
