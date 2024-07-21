@@ -28,7 +28,7 @@ export default function EditTaskModal() {
 
   const apiCall = async () => {
     try {
-      const response = await axios.get(`http://127.0.0.1:8082/u1/api/tasks/view/${id}`, {
+      const response = await axios.get(`https://polaris-2.onrender.com/u1/api/tasks/view/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -43,7 +43,7 @@ export default function EditTaskModal() {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://127.0.0.1:8082/u1/api/tasks/update/${id}`, 
+      await axios.put(`https://polaris-2.onrender.com/u1/api/tasks/update/${id}`, 
         { title, description },
         { headers: { Authorization: `Bearer ${token}` } }
       );

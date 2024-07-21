@@ -60,7 +60,7 @@ export default function TaskPage() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8082/u1/api/tasks/view', {
+      const response = await axios.get('https://polaris-2.onrender.com/u1/api/tasks/view', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -179,7 +179,7 @@ export default function TaskPage() {
 
   const handleDelete = async (taskId: string) => {
     try {
-      await axios.delete(`http://127.0.0.1:8082/u1/api/tasks/delete/${taskId}`, {
+      await axios.delete(`https://polaris-2.onrender.com/u1/api/tasks/delete/${taskId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

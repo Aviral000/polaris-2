@@ -26,7 +26,7 @@ export default function UserPage() {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8082/u1/api/users', {
+      const response = await axios.get('https://polaris-2.onrender.com/u1/api/users', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ export default function UserPage() {
     e.preventDefault();
     try {
       await axios.put(
-        'http://127.0.0.1:8082/u1/api/users/update',
+        'https://polaris-2.onrender.com/u1/api/users/update',
         user,
         {
           headers: {

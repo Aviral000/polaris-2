@@ -29,7 +29,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     validate(formData);
 
     try {
-        const response = await axios.post('http://127.0.0.1:8082/u1/api/users/signup', formData);
+        const response = await axios.post('https://polaris-2.onrender.com/u1/api/users/signup', formData);
         navigate('/login');
       } catch (err) {
         console.error('Error:', err);

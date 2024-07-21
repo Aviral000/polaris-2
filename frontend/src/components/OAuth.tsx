@@ -17,7 +17,7 @@ const handleGoogleClick = async () => {
         const resultsFromGoogle = await signInWithPopup(auth, provider);
         const { displayName, email } = resultsFromGoogle.user;
 
-        const res = await axios.post("http://127.0.0.1:8082/u1/api/users/auth/google", {
+        const res = await axios.post("https://polaris-2.onrender.com/u1/api/users/auth/google", {
             fullName: displayName,
             email
         });
