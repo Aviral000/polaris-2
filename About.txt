@@ -1,0 +1,39 @@
+POLARIS - website name
+Task Reminder - description and working
+
+important:
+website may be very slow because it is uploaded on free services 
+
+BACKEND:
+
+1. Handle all routes
+2. Create signup account with bcrypted password
+3. Login and generate token on login phase if successful
+4. Add, View, delete, Edit routes are added for managing the Task
+5. New route for managing the user profile is also added and updating the user info (*bonus*)
+6. New Route created for those user who want to login using their google accounts
+
+challenge:
+7. If a google account is already in database, and user sign in again with that google account, a separate service is created for that to handle that, existing email will directly open from signup if you are a exisitng user or not
+8. Same goes for login
+
+FRONTEND:
+
+1. Homepage - Just a simple Homepage(bonus)
+2. SignUp Page - You can signup using google account or manually typing
+3. login Page - you can login directly using google account or by typing manually
+4. Task Page - where you add, view, delete, edit, switch status
+             - because of drag and drop functionality it will carries less feature as compare to other deploy
+5. User-Profile = (*BONUS*) A user profile is create in which it fetch the name of the login user via google account or manually typed user and update feature is also given.
+
+
+BASIC THINGS USED:
+
+BACKEND:
+        express, jsonwebtoken, bcrypt, mongoose, middlewares, third-party middlewares, joi, passport, passport-jwt and dotenv and many more
+
+FRONTEND:
+        react, javascript, typescript, jest(testing), react-dragger, webpack and its plugin and loader, lodash.debounce, axios, firebase, gsap and many more
+
+TOOLS:
+        vercel, render, firebase
