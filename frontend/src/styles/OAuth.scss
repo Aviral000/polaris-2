@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+$base_color: rgba(255, 255, 255, 1);
+
+$text_color: rgba(0, 0, 0, 1);
+
+$font_weight: 100;
+
+@mixin playFair {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.OAuth-1A{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        background-color: lightblue;
+        padding: "0";
+        width: 90%;
+        border: 0;
+        height: 2rem;
+        transition: width .7s ease;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        width: 100%;
+        background-color: darken(lightblue, 10%);
+    }
+}
